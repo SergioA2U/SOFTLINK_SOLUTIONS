@@ -51,3 +51,10 @@ body {
     color: #003e7e;
     font-weight: bold;
 }
+
+.fa-brands.fa-whatsapp {
+    color: red;
+    /* Cambia el color */
+    font-size: 30px;
+    /* Cambia el tamaño */
+}

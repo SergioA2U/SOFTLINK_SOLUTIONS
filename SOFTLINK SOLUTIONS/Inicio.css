@@ -1,0 +1,269 @@
+/*
+Base
+*/
+:root {
+    --blue: #003e7e;
+    --blue-600: #0a4b89;
+    --cta: #2b67b1;
+    --cta-hover: #225aa2;
+    --text: #0f172a;
+    --muted: #64748b;
+    --footer-line: #3d6a9b;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+}
+
+.container {
+    width: min(1200px, 92%);
+    margin-inline: auto;
+}
+
+/*
+Header 
+*/
+.navbar {
+    background: var(--blue);
+    height: 80px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo img {
+    height: 44px;
+    display: block;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    display: flex;
+    align-items: center
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 10px 16px;
+    border-radius: 999px;
+    transition: .2s ease;
+}
+
+.navbar-menu a.active,
+.navbar-menu a:hover {
+    background: #fff;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+/*
+Registrarse
+*/
+.navbar-menu li:last-child a,
+.navbar-menu .btn-registrarse {
+    background: #fff;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.navbar-menu li:last-child a:hover,
+.navbar-menu .btn-registrarse:hover {
+    filter: brightness(0.96);
+}
+
+/*
+Hero (alineado a la izquierda) 
+*/
+.hero {
+    background:
+        linear-gradient(rgba(0, 30, 80, 0.6), rgba(0, 30, 80, 0.6)),
+        url("images/Fondo.jpg") center/cover no-repeat;
+}
+
+.hero .container {
+    padding: 88px 0 110px 0;
+}
+
+.hero-mark {
+    width: 170px;
+    margin-bottom: 24px;
+}
+
+.hero-title {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.15;
+    margin: 6px 0 22px 0;
+    font-weight: 900;
+    letter-spacing: .2px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 12px;
+    padding: 12px 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-hero {
+    background: var(--blue);
+    color: #fff;
+    border: 1px solid var(--blue);
+}
+
+.btn-hero:hover {
+    background: var(--cta-hover);
+}
+
+/*
+Quiénes somos?
+*/
+.about {
+    background: #fff;
+    padding: 54px 0 70px;
+}
+
+.about-inner {
+    max-width: 760px;
+}
+
+.about h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+    margin: 0 0 10px 0;
+    color: #0a0a0a;
+    font-weight: 900;
+}
+
+.about p {
+    color: var(--muted);
+    margin: 0 0 22px 0;
+    line-height: 1.7;
+}
+
+.btn-outline {
+    background: var(--blue);
+    color: #fff;
+    border: 1px solid var(--cta-hover);
+}
+
+.btn-outline:hover {
+    background: var(--cta-hover);
+    filter: brightness(0.92);
+}
+
+/*
+Footer 
+*/
+.footer {
+    background: var(--blue);
+    color: #fff;
+    padding-top: 36px;
+    margin-top: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.footer h4 {
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 6px;
+    font-weight: 800;
+}
+
+.footer p,
+.footer li {
+    margin: 8px 0;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none
+}
+
+.footer a:hover {
+    opacity: .85
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.socials a {
+    font-size: 1.35rem;
+    margin-right: 14px
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--footer-line);
+    margin-top: 26px;
+    text-align: center;
+    padding: 16px 0 22px;
+    font-size: .95rem;
+}
+
+/*Responsive
+ */
+@media (max-width: 900px) {
+    .navbar-menu a {
+        padding: 8px 12px;
+        font-size: .95rem
+    }
+
+    .hero .container {
+        padding: 70px 0 90px
+    }
+}
+
+@media (max-width: 720px) {
+    .navbar {
+        height: auto;
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 10px
+    }
+
+    .navbar-menu {
+        flex-wrap: wrap;
+        justify-content: flex-end
+    }
+
+    .hero-title {
+        font-size: clamp(1.9rem, 6vw, 2.6rem)
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center
+    }
+}

@@ -1,0 +1,221 @@
+:root {
+    --azul: #00428A;
+    --azul-oscuro: #003366;
+    --gris: #999797;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --radio: 12px;
+    --sombra: 0 6px 15px rgba(0, 0, 0, 0.12);
+    --fuente: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #003e7e;
+    padding: 20px;
+    height: 80px;
+}
+
+.navbar-logo img {
+    height: 150px;
+    margin-top: 20px;
+    transition: transform 0.2s;
+}
+
+.navbar-logo:hover img {
+    transform: scale(1.07);
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 22px;
+    border-radius: 18px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar-menu a.active,
+.navbar-menu a:hover {
+    background: #fff;
+    color: #003e7e;
+    font-weight: bold;
+}
+
+.fa-brands.fa-whatsapp {
+    color: red;
+    /* Cambia el color */
+    font-size: 30px;
+    /* Cambia el tamaño */
+}
+
+/* Reset simple */
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+    color: var(--negro);
+    background: var(--blanco)
+}
+
+
+.btn-login {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    background: transparent;
+    color: var(--blanco);
+    transition: all .18s ease;
+}
+
+.btn-login:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateY(-1px)
+}
+
+/* PAGE */
+.page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 40px
+}
+
+/* FORM CONTAINER */
+.form-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px
+}
+
+.card {
+    background: var(--blanco);
+    border: 1px solid var(--gris);
+    border-radius: var(--radio);
+    padding: 28px;
+    box-shadow: var(--sombra);
+}
+
+/* TITLE */
+.card h2 {
+    text-align: center;
+    margin: 0 0 18px;
+    color: var(--azul);
+    font-size: 1.6rem;
+}
+
+/* FORM FIELDS */
+.form label {
+    display: block;
+    margin: 8px 0 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--gris);
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background: #fff;
+    transition: box-shadow .16s, border-color .16s;
+}
+
+.form input:focus,
+.form select:focus {
+    border-color: var(--azul);
+    box-shadow: 0 0 8px rgba(0, 66, 138, 0.15);
+}
+
+/* BUTTON */
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 16px;
+    background: var(--azul);
+    color: var(--blanco);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .18s, transform .12s;
+}
+
+.btn-primary:hover {
+    background: var(--azul-oscuro);
+    transform: translateY(-2px)
+}
+
+.btn-primary:active {
+    transform: translateY(0)
+}
+
+/* HELP TEXT */
+.help {
+    margin: 14px 0 0;
+    text-align: center;
+    color: var(--gris);
+    font-size: 0.95rem
+}
+
+.link {
+    color: var(--azul);
+    font-weight: 700;
+    text-decoration: none
+}
+
+.link:hover {
+    text-decoration: underline
+}
+
+/* Responsive pequeño */
+@media (max-width:480px) {
+    .nav-inner {
+        padding: 12px
+    }
+
+    .brand {
+        font-size: 1.05rem
+    }
+
+    .form-container {
+        padding: 10px
+    }
+
+    .card {
+        padding: 20px
+    }
+}
+

@@ -31,7 +31,7 @@ Necesitas un entorno de servidor web local que soporte PHP. La forma más sencil
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone [https://github.com/tu-usuario/tu-repositorio.git](https://github.com/tu-usuario/tu-repositorio.git)
+    git clone [https://github.com/SergioA2U/SOFTLINK_SOLUTIONS.git]
     ```
 
 2.  **Mueve los archivos:**

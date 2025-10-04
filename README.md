@@ -45,20 +45,3 @@ Necesitas un entorno de servidor web local que soporte PHP. La forma más sencil
 
 ¡Y listo! El sitio web debería estar funcionando en tu máquina local.
 
-## Estructura de Archivos
-
-/
-├── images/             # Contiene todas las imágenes
-├── php/                # Lógica del backend
-│   ├── check_session.php # Guardián para rutas protegidas
-│   ├── login_usuario.php # Procesa el inicio de sesión
-│   ├── logout.php        # Cierra la sesión
-│   ├── registro_usuario.php # Procesa el registro de nuevos usuarios
-│   └── usuarios.json     # Base de datos de archivos planos
-├── index.php           # Página de aterrizaje
-├── Inicio.php            # Página de inicio principal
-├── productos.php         # Página protegida de servicios
-├── registro.php          # Página con el formulario de registro
-├── iniciar sesión.php    # Página con el formulario de login
-├── *.css               # Hojas de estilo
-└── *.js                # Scripts de JavaScript

@@ -13,13 +13,13 @@ Este repositorio contiene el código fuente de un sitio web corporativo dinámic
 - **Menú de Navegación Dinámico:** La barra de navegación cambia su contenido para mostrar un saludo de bienvenida y un botón de "Cerrar Sesión" si el usuario está logueado.
 - **Base de Datos Ligera:** Utiliza un archivo `usuarios.json` como sistema de almacenamiento, lo que hace que el proyecto sea fácil de desplegar sin necesidad de configurar una base de datos MySQL.
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Backend:** PHP
 - **Base de Datos:** Archivo plano (JSON)
 
-## 🚀 Cómo Poner en Marcha el Proyecto
+## Cómo Poner en Marcha el Proyecto
 
 ### Requisitos Previos
 
